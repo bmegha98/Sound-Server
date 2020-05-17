@@ -9,3 +9,51 @@ Implement a TCP client- server application to implement a service that returns t
 *  Accepts a BYE message that results in closing of the current session between the client and the server.
 *  Accepts an END message that results in closing of the current session and termination of the server.
 
+### Use the following messages to communicate with server : 
+1. register - To register with server
+2. login - To communicate with server (if client is already registered)
+3. sound - To confirm that connection has established
+4. store - To store new animal-voice pair
+5. query - To get names of all stored animals
+6. bye   - To instruct server that client no longer needs this session
+7. end   - To instruct server to shut down
+8. animal name - To get voice of given animal
+
+Client: SOUND
+Server: SOUND: OK
+
+### To get the voice of given animal
+Client: DOG
+Server: A DOG SAYS WOOF
+
+### If client enters name of animal that is not stored in server's memory
+Client: CAT
+Server: I DON’T KNOW CAT
+
+### To store a new animal-voice pair
+Client: STORE
+CAT
+MEOW
+SERVER: STORE: OK
+
+### To get names of all animals stored in server's memory
+Client: QUERY
+SERVER: DOG
+HORSE
+SNAKE
+COW
+SHEEP
+CAT
+QUERY: OK
+
+### Client is shutdown,not the server
+Client: BYE
+SERVER: BYE: OK
+
+### Server and all clients are shutdown
+Client: END
+Server: END: OK
+
+
+
+
