@@ -19,40 +19,40 @@ Implement a TCP client- server application to implement a service that returns t
 7. end   - To instruct server to shut down
 8. animal name - To get voice of given animal
 
-Client: SOUND
-Server: SOUND: OK
+Client: SOUND<br/>
+Server: SOUND: OK<br/>
 
 ### To get the voice of given animal
-Client: DOG
-Server: A DOG SAYS WOOF
+Client: DOG</br>
+Server: A DOG SAYS WOOF<br/>
 
 ### If client enters name of animal that is not stored in server's memory
-Client: CAT
-Server: I DON’T KNOW CAT
+Client: CAT<br/>
+Server: I DON’T KNOW CAT<br/>
 
 ### To store a new animal-voice pair
-Client: STORE
-CAT
-MEOW
-SERVER: STORE: OK
+Client: STORE<br/>
+CAT<br/>
+MEOW<br/>
+SERVER: STORE: OK<br/>
 
 ### To get names of all animals stored in server's memory
-Client: QUERY
-SERVER: DOG
-HORSE
-SNAKE
-COW
-SHEEP
-CAT
-QUERY: OK
+Client: QUERY<br/>
+SERVER: DOG<br/>
+HORSE<br/>
+SNAKE<br/>
+COW<br/>
+SHEEP<br/>
+CAT<br/>
+QUERY: OK<br/>
 
 ### Client is shutdown,not the server
-Client: BYE
-SERVER: BYE: OK
+Client: BYE<br/>
+SERVER: BYE: OK<br/>
 
 ### Server and all clients are shutdown
-Client: END
-Server: END: OK
+Client: END<br/>
+Server: END: OK<br/>
 
 
 
