@@ -62,7 +62,7 @@ void str_cli(int sockfd)
 			if((n = read(fileno(stdin),buff, MAXLINE)) == 0)		//EOF 
 			{
 			   stdineof = 1;
-			   shutdown(sockfd ,1);    //SHUT_WR
+			   shutdown(sockfd ,1);    //SHUT_WR  Disable further send operations
 			   FD_CLR(fileno(stdin),&rset);
 			   continue;
 			} 
