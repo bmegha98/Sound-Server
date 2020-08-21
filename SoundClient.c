@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include<netinet/in.h>
-#include<sys/types.h>
+#include<netinet/in.h>			//for Internet address family, defines sockaddr_in
+#include<sys/types.h>			//for p_id
 #include<sys/socket.h>
-#include<netinet/in.h>
 #include<netdb.h>
 #include<unistd.h>
 #include<stdlib.h>
